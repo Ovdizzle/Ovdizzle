@@ -1,0 +1,855 @@
+import React from "react";
+
+function Icon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      width="1920"
+      height="1280"
+      version="1.1"
+      viewBox="0 0 508 338.667"
+      xmlSpace="preserve"
+    >
+      <g
+        stroke="#000"
+        strokeDasharray="none"
+        strokeOpacity="1"
+        strokeWidth="0.2"
+      >
+        <image
+          width="508"
+          height="338.667"
+          x="0"
+          y="0"
+          display="none"
+          imageRendering="optimizeQuality"
+          opacity="0.687"
+          preserveAspectRatio="none"
+         
+        ></image>
+        <path
+          fill="none"
+          d="M63.181 143.604v35.039l-1.272-.735v-33.957z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M63.181 143.604l36.388.02h.424v35.035l-36.812-.017"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M64.46 144.772h34.205v33.537h-34.26z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M67.368 155.382s7.354 1.101 8.73.865c1.377-.236 3.854-.59 4.287-.55.433.04 12.978-.708 13.175.118.196.826 2.595-.118 2.595-.118v-6.292H67.171v6.017z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M66.574 158.064s-2.447 3.504.111 10.178c0 0-.445 1.446 11.124-1.223l2.335-.445s1.836-1.168 1.725-1.558l-.056-4.17s-7.508-2.893-12.848-2.726z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <ellipse
+          cx="69.16"
+          cy="163.153"
+          fill="none"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+          rx="1.863"
+          ry="1.808"
+        ></ellipse>
+        <path
+          fill="none"
+          d="M83.537 161.568H95.55v3.17l-.472.223H83.62z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M82.668 165.28v-4.157h13.717v3.643l-.515.515H82.668"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M86.795 146.593h-10.5v1.848h10.5z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M0 238.932l40.823 1 4.748 16.433L0 255.116v1.691l45.305.944h.266v-1.386"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M71.497 228.138s3.186-.315 2.163 2.87c-1.022 3.186-4.877 8.063-4.877 8.063s-.096.417.071.917c.167.5.334-.556.167.5-.167 1.058-2.836 14.072-2.836 14.072l-5.673 29.867.222.417.125.514s-.028-.125.014.376l.042.5-.042.32.028.222-.39-.041-.027.486.07.39.138.333 1.154 4.909 7.23 26.501"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M71.497 228.138L35.15 278.642l.223 4.116 4.112-.23 6.764-9.832 22.534-33.625"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M45.94 280.422l7.162-.166s1.012.118 1.003.954c-.01.836 3.654 26.91 3.654 26.91L0 309.62v2.28l57.953-1.668-.195-2.113"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M62.433 274.31l-3.2 4.332 6.117-30.645.78-4.967-5.77 8.61-5.243 27.503s2.502 1.28 4.06-.5"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M55.475 279.294l-.845 3.812"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M59.232 278.642l-2.168 10.178s.197 2.32.669 2.989c.471.668 2.595 3.343 2.595 3.343"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M56.907 314.107l3.342 18.563 3.068-4.365-3.421-18.366-2.832-17.108v-4.011"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M0 332.237l53.893-.035 19.466 6.465"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M36.81 330.979l13.686-20.45 20.765-30.676s12.742-14 17.461-14.472c4.72-.472 14.866.472 3.383 24.383-11.484 23.91-27.765 49.08-27.765 49.08l-8.102-.157s28.63-41.451 29.181-43.496c.55-2.045 10.225-22.495 8.023-25.248-2.203-2.753-5.427-4.405-5.427-4.405"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M73.526 284.093l-15.767 24.026"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M45.161 332.257l1.224-1.668 8.454-13.015 13.793-21.802 4.672-7.23 2.558-3.448 1.001-1.78-3.893 30.59"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M70.968 328.03l-1.113 9.344"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M74.527 338.264s.89-7.119.556-10.234c0 0 3.782 2.448 3.115 6.786-.668 4.338-.668 3.67-.668 3.67l4.784.223 10.01-41.824 1.113-5.117-.334-1.335 3.218-11.33s0 0 0 0"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M0 8.101c18.17 1.023 23.282.944 23.282.944l6.37 6.135.787 1.652-.786.747-6.647.512L0 17.697"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M29.653 15.18L0 13.607"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M30.518 0c0 6.764-.079 16.832-.079 16.832"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M24.304 0v10.03"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M23.366.002l-.084 9.043"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M27.539 17.742l.06 221.866"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M22.172 239.475l.834-221.384"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.978 32.72L0 31.855v1.259l20.018.865z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.86 48.255l-19.9-.551.04 1.81 19.9.314z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.978 64.26l-20.017-.628L0 64.929l19.152.433z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.939 80.228l-19.978-.55v1.572l19.152.315z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.9 96.273l-.276 1.101-19.663-.196v-1.416z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.86 112.2l-.236 1.102-19.585-.433-.078-1.14z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M20.467 18.02l-1.112 208.342"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.577 128.087L0 127.697l.056 1.557 19.577.056"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.689 144.049l-19.633-.445L0 144.883l19.633.278"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.744 159.621l-19.8-.11.112 1.39 19.577-.056"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.577 175.361c-13.515.111-19.577 0-19.577 0v1.335l19.577-.111"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.466 190.99H0l.056 1.223h19.41"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.41 206.674l-19.466.278.112 1.168 19.354-.334"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M19.244 222.246L0 222.525v1.279l19.3-.556"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <ellipse
+          cx="18.938"
+          cy="226.918"
+          fill="none"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+          rx="3.365"
+          ry="0.222"
+        ></ellipse>
+        <path
+          fill="none"
+          d="M15.573 226.918l.055 11.235.78 1.001"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M15.517 237.986l-10.511.334-.112-4.45L0 233.76"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M30.7-.222l410.907 22.127"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M441.41.315l-.087 307.36s2.224 3.392 8.231 1.668l.167-279.866s8.482-6.201 1.808-8.648"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M450.374 20.694l-.348-20.65"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M451.5 0l.029 20.829"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M449.721 29.477c-4.56-.055-.445-8.176-.445-8.176s1.026-1.063 2.253-.472"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M401.362 21.051l.028 2.392-.362.361v212.081l-126.523 4.759.314-223.104 112.388 5.597 3.226 1.168 2.113.055-.055-2.169-1.112-1.557"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M394.16 20.578l-4.19 204.689 5.427 3.382 5.631 7.236"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M274.513 234.426l121.69-4.066"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M274.522 228.253l113.019-4.116 1.112-132.925-.695-.945-113.239-1.836"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M274.724 85.428l115.931 2.558 1.168-1.64-1.112-1.863-115.983-2.014"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M274.73 80.739l114.964 2.32-.727-56.788-1.357-1.043-112.794-5.073"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M103.51 7.158l-2.124-1.79 2.143-.491 2.045.118 1.534.452 3.284.413 3.421.236 10.658.634h2.225l9.677.834 1.613.167 7.954.5 10.845.39 1.947.167 1.946.166 4.005.056 4.449.222 1.39.167 1.39.223h4.617l17.909 1.057 10.011.556 10.456.333 7.008.557 5.117.11 8.23.334 24.806 1.447 6.34.667v13.014l-.081 220.065-.315 52.541-2.517-2.988-5.034.943-46.249 3.304-.392-.562h-3.476l-.973.724-.111.611-2.42.084-.415-.68-1.376.02-.747-.551-4.307.02v1.14l-77.72 4.36-.64-.806-5.228.028v6.73h-9.177z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M111.572 6.096C112.79 8.082 112.79 8.1 112.79 8.1l.02 5.683.098 10.029.075 53.946 1.42 228.191"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M112.982 76.334l151.498 4.281.723 1.189-.258 3.617-151.084-4.118"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M113.023 84.012L262.05 87.23"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M265.578 17.174l-47.193-2.498-2.17.93-15.194-.62-2.79-1.343-77.793-4.07-3.946.95h-3.727"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M207.016 86.816l.93 214.354"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M202.468 301.067v-214.1l4.548-.02"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M117.515 88.575l79.824 1.665s.698 0 .71.659c.014.659 0 139.681 0 139.681l-79.218 2.55z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M210.475 91.937l47.503.438.197 135.311-47.025 1.86z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M214.974 96.325l38.948.27-.242 126.544-38.053 1.66z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M122.485 93.69l71.418 1.115.201 131.382-70.889 1.827z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M507.99 337.563l-52.62-23.824-2.192-1.608-1.827-1.315-1.797-1.473"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M436.077 306.723s2.233 1.903 5.246.952"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M436.077 306.723l-40.856 4.576-76.48.827-59.325 2.067-75.835 2.104-86.821 5.554-10.487.694"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M66.146 323.546H62.58"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M58.343 323.65a865.97 865.97 0 00-7.648.206"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M40.195 324.628h-2.631"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M1.462 325.067h25.87"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M433.996 338.47l49.799-3.297-31.42-15.296-46.198 2.377z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M410.718 230.791l16.59-.584-.293 31.79H422.484l-11.985.512z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          d="M410.718 230.791l-1.066-.963 17.692-.772.75.858-.184 32.887-18.374.697.116-33.67"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <ellipse
+          cx="411.864"
+          cy="247.278"
+          fill="#000"
+          fillOpacity="1"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+          rx="0.83"
+          ry="0.723"
+        ></ellipse>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M412.08 232.404l13.889-.17.362 28.448-14.48.511.183-12.022h3.836l-.11-9.939-3.653.11z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M412.107 236.163l11.4-.256.037 20.719-9.793.402v-7.784"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M211.818 301l-.126-7.13.491.918 46.124-3.101-.75-.804-45.865 2.994"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M258.307 291.687l.152 6.571"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M256.078 242.777l.005 47.4-42.562 2.576-.149-49.047z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M259.074 241.553s.237.164.274-1.316l-47.384 2.125.542.414-.064.504.736.013z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M259.312 239.469l-1.188-1.292-45.987 2.106-.246.374.009.777.758.365z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M213.07 239.123l44.378-1.91.785.53-.255.21"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M121.75 247.427l.206 50.643 34.365-1.99.569.607 6.191-.268-.182-.95 33.179-1.535-.354-49.065z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M162.378 246.022l.52 49.447-6.558.182-.804-48.782"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M119.633 305.922l-.002-8.007.904 1.188 77.282-3.927-1.74-1.242"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M197.817 295.176l.176 6.052"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M119.192 245.773l1.55 1.344 78.006-2.532-.104-1.81z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M119.476 243.138l76.894-2.645 1.644.822.165 1.254-79.403 2.565z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M120.438 242.393l75.42-2.43"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M189.342 190.841v1.86l10.75.569.206-2.016z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M197.146 193.218l-.207 9.147 3.41.103.362-12.35-2.325-.104-.362-.465-.568-.052-.465 1.396"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M462.4.103l-.516 20.154 1.964.104s1.55-3.101 5.58 4.03l38.448 1.654"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M465.026 19.692L508 22.221"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M462.202 7.86L508 10.232"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M471.496 10.335l36.38 2.274"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M457.336.31l-.103 16.433-.29 4.816.913-.402.365.037.183.329s.438-.256.438.036v.292l.22.256-.11 1.17s.22 1.06.036 1.57c-.182.512.147 2.084.147 2.084s-1.791 4.458-1.791 5.92v1.46l-.266 5.17-.517.517.104 5.477v8.94l-.259 13.746-1.653 232.027s-2.791 2.74-.466 10.542l.62 1.86"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M473.13 27.625l34.202 1.608"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M473.422 29.963l34.056 1.316"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M469.183 24.41s-4.53-1.024-3.946 6.43c0 0-.585 1.754 8.039 2.339l34.64 1.023"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M473.13 33.325l2.552 22.072-.569.052.207 1.188 3.204-.258s.982-.31 1.757.103c.775.414 4.806.517 4.806.517s17.001 1.085 22.789.569"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M473.046 35.347c-8.372-.517-13.746-.62-13.746-.62l.103 4.237 14.056.827"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M458.806 123.508s18.855-13.301 48.964-8.332"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M508.063 133.008l-42.68 1.462-.73 68.989 43.117 5.554z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M464.945 214.129l42.387 5.992.438 20.902-43.264-7.893z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M464.36 233.13l.438 19.147 42.972 9.209-.146 20.316-43.556-11.4.73-18.125"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M464.36 270.548l-.292 18.709 43.264 13.154.146-20.755"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M464.068 292.034l43.848 14.47.147 11.547-43.265-15.055-.402-.256.037 2.01s-5.664-1.206-5.883-2.083"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M458.806 123.508l-.256 179.16"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M508 321.412l-52.118-17.54v3.363l51.888 18.124"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M455.919 303.91l3.252-.622"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M274.505 240.644l.135 61.987-.84 1.132-4.239.073-3.55-3.533"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M435.529 295.486l.232 11.007-4.004-1.447-4.367.568v-.568l.62-.026s.594-.723.103-.904l-.49-.181.077-.44.75-.439s2.583-2.532 1.369-6.666l.93-.44 2.945.595s-.387-.982.724-.982c1.11 0 1.11-.077 1.11-.077z"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M387.917 311.108l9.208-.914 8.112-.328.329-2.083 6.943-1.023s.073-.622 1.132-1.462c1.06-.84-1.206-4.86-1.206-4.86l1.133-.22.146-1.717-2.873.602-.62-.064.542-.466-.13-.658-1.653-.4-2.338 2.053-.724-.439-.465-.026s-.258 2.041-.956 1.111c-.697-.93-1.47-1.493-1.47-1.493l-1.115-1.334-.33.091-.401.932s.164.968 0 1.151c-.165.183.603.256-.165.183l-.767-.073-.31-1.005-.183-1.133h-3.143l-2.374-.058-2.138 1.538-2.485 1.443-8.934.347-1.097-2.63s-36.614 1.753-39.244 2.85c-2.631 1.096-2.631.95-2.631.95s-.987-.293-1.097-.695l-.11-.401-2.119.584-1.717.84s-.84.037-1.206-.547c-.365-.585-2.96-.11-2.96-.11l-.182.767-.548-.73-5.664.255s-2.12 2.193-4.714.256l-57.977 3.112s-130.939 5.512-143.728 7.339l-12.79 1.827-4.53 1.06-10.487.584"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M71.21 316.776l-2.687.104"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M64.492 317.293l-2.997.104"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M57.36 317.603l-2.273.31-.103 1.964h-1.447"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M44.028 319.464l-6.2-.104"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M21.91 257.142v18.19"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M22.324 311.506v13.435"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M27.699 257.349l.206 18.19"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+        <path
+          fill="none"
+          fillOpacity="1"
+          d="M27.699 311.092l.206 14.056"
+          opacity="0.687"
+          paintOrder="markers fill stroke"
+        ></path>
+      </g>
+    </svg>
+  );
+}
+
+export default Icon;

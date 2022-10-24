@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.904abdb1.css",
+    "main.js": "/static/js/main.a3e97061.js",
+    "static/media/As You Fade Away - NEFFEX.mp3": "/static/media/As You Fade Away - NEFFEX.87d33406d6c652a868c1.mp3",
+    "static/media/Play Dead - NEFFEX.mp3": "/static/media/Play Dead - NEFFEX.35f684db0ea2f2d71880.mp3",
+    "static/media/Immortal - NEFFEX.mp3": "/static/media/Immortal - NEFFEX.bdbcafd8ba0704f78a21.mp3",
+    "static/media/Enough - NEFFEX.mp3": "/static/media/Enough - NEFFEX.8db3355eb06b6df55e98.mp3",
+    "static/media/Winning - NEFFEX.mp3": "/static/media/Winning - NEFFEX.173e8ca4cf0fd51c2a31.mp3",
+    "static/media/africandrums.jpg": "/static/media/africandrums.1e90c65e9f9baeb85560.jpg",
+    "static/media/Homepage images.png": "/static/media/Homepage images.17be9a92e03c36563886.png",
+    "static/media/Call.jpg": "/static/media/Call.43092da1704b546b58c4.jpg",
+    "static/media/Crazy.jpg": "/static/media/Crazy.beeed1ef9a6a7de42f51.jpg",
+    "static/media/Deem.jpg": "/static/media/Deem.2bdb8af8e2b602bc9e81.jpg",
+    "static/media/Senator.jpg": "/static/media/Senator.910c75afe06f607e2de6.jpg",
+    "static/media/vintagepiano.jpg": "/static/media/vintagepiano.97077a0fc600469bb1d7.jpg",
+    "static/media/Strings.jpg": "/static/media/Strings.7a7dff7ae29990e5f728.jpg",
+    "static/media/shirt.png": "/static/media/shirt.25008fb88bfd96e51deb.png",
+    "index.html": "/index.html",
+    "main.904abdb1.css.map": "/static/css/main.904abdb1.css.map",
+    "main.a3e97061.js.map": "/static/js/main.a3e97061.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.904abdb1.css",
+    "static/js/main.a3e97061.js"
+  ]
+}

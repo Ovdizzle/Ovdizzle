@@ -1,30 +1,50 @@
-import React from "react";
+import React, { useRef } from "react";
 import Play from "@mui/icons-material/PlayCircle";
+import { PauseCircle } from "@mui/icons-material";
 import { Audio } from "ts-audio";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  updateSong,
+  setIsPlaying,
+} from "../../store/slice-reducers/AudioSlice";
+import { motion } from "framer-motion";
 
-const Playlist = () => {
-  const audio = Audio({
-    file: "http://localhost:5000/assets/uploads/packs/125_Gmaj_trap_jazz/guitar_riff.wav",
-    loop: true,
-    volume: 1,
-  });
+const Playlist = ({ source }) => {
+  const dispatch = useDispatch();
+  const IsPlaying = useSelector((state) => state.audio.IsPlaying);
+  const src = useSelector((state) => state.audio.src);
+  const audio = useRef();
 
   const PlaySong = () => {
-    audio.play();
+    dispatch(
+      updateSong(
+        "http://localhost:5000/assets/uploads/packs/125_Gmaj_trap_jazz/guitar_riff.wav"
+      )
+    );
+    audio.current.toggle();
   };
-  const Pause = () => {
-    audio.play();
-  };
+
+  function togglePlay(sc) {
+    IsPlaying ? audio.current.pause() & dispatch(updateSong(sc)) : false;
+    dispatch(setIsPlaying());
+    dispatch(updateSong(sc));
+    return audio.current.paused ? audio.current.play() : audio.current.pause();
+  }
+
+  var source =
+    "http://localhost:5000/assets/uploads/packs/125_Gmaj_trap_jazz/guitar_riff.wav";
+
+  const onPlaying = () => {};
 
   return (
     <div>
-      {/* <audio
-        controls
-        src='http://localhost:5000/assets/uploads/packs/125_Gmaj_trap_jazz/african_vocals.wav'
-      ></audio> */}
-      <div onClick={PlaySong} className='play_icon mt-2'>
-        <Play />
-      </div>
+      <audio ref={audio} src={src}></audio>
+      <motion.div
+        onClick={() => togglePlay(source)}
+        className='play_icon inline-block mt-2'
+      >
+        {IsPlaying & (source === src) ? <PauseCircle /> : <Play />}
+      </motion.div>
       <div className='nav_div'>
         <div className='seekbar'></div>
       </div>

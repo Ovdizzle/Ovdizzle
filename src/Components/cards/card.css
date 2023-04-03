@@ -1,0 +1,15 @@
+#Card:hover .cart {
+  transform: translateY(0);
+  transition: 0.4s ease-out;
+}
+
+.clef {
+  top: -25px;
+}
+
+.details_card:hover .clef {
+  opacity: 1;
+  transform: rotateZ("360*6");
+  transition: 0.5s ease;
+  top: 4px;
+}/*# sourceMappingURL=card.css.map */

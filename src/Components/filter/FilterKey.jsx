@@ -8,6 +8,9 @@ import Select from "@mui/material/Select";
 import Checkbox from "@mui/material/Checkbox";
 import Close from "./Close";
 import { useState } from "react";
+import { selectStyles } from "../data/variables";
+import { IconButton } from "@mui/material";
+import { ArrowDropDown, Clear } from "@mui/icons-material";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -49,7 +52,6 @@ export default function FilterKey({ Label, names }) {
   const [showSelect, setShowSelect] = useState(false);
   const [majmin, setMajmin] = useState("");
 
-  const chooseKey = () => {};
   const handleChange = (event) => {
     const {
       target: { value },
@@ -62,28 +64,53 @@ export default function FilterKey({ Label, names }) {
 
   return (
     <div>
-      <FormControl
-        sx={{
-          m: 1,
-          width: 125,
-        }}
-        size='small'
-      >
+      <FormControl sx={selectStyles} size='small'>
         <InputLabel className='font-bold' id='demo-multiple-checkbox-label'>
           {Label}
         </InputLabel>
         <Select
           open={showSelect}
           onOpen={() => setShowSelect(true)}
-          // onClose={() => setShowSelect(false)}
+          onClose={() => setShowSelect(false)}
           className='text-center'
           labelId='demo-multiple-checkbox-label'
           id='demo-multiple-checkbox'
           // multiple
           value={key + majmin}
+          // IconComponent={key & majmi}
           renderValue={(selected) => selected}
           input={<OutlinedInput label={Label} />}
           MenuProps={MenuProps}
+          endAdornment={
+            <IconButton
+              sx={{
+                position: "relative",
+                right: "5px",
+              }}
+              onClick={() => {
+                setKey("");
+                setMajmin("");
+              }}
+            >
+              {!key & !majmin ? (
+                <ArrowDropDown
+                  sx={{
+                    fontSize: "1.25rem",
+                    fontWeight: "700",
+                    // border: "2px solid black",
+                  }}
+                />
+              ) : (
+                <Clear
+                  sx={{
+                    fontSize: "1rem",
+                    fontWeight: "700",
+                    // border: "2px solid black",
+                  }}
+                />
+              )}
+            </IconButton>
+          }
         >
           <div className='p-1 flex flex-wrap '>
             {keys.map((entry) =>

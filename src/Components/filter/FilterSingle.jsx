@@ -9,8 +9,8 @@ import Checkbox from "@mui/material/Checkbox";
 import Close from "./Close";
 import { useState } from "react";
 import { selectStyles } from "../data/variables";
+import { ArrowDropDown, Clear } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import { ArrowDropDown, ArrowDropDownCircle, Clear } from "@mui/icons-material";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -18,7 +18,6 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      // height: 100,
       width: 250,
     },
   },
@@ -37,9 +36,8 @@ const MenuProps = {
 //   "conga",
 // ];
 
-export default function FilterItem({ Label, names }) {
-  const [personName, setPersonName] = React.useState(Array);
-  console.log(personName);
+export default function FilterSingle({ Label, names }) {
+  const [personName, setPersonName] = React.useState("");
 
   const handleChange = (event) => {
     const {
@@ -55,7 +53,9 @@ export default function FilterItem({ Label, names }) {
   return (
     <div>
       <FormControl sx={selectStyles} size='small'>
-        <InputLabel id='demo-multiple-checkbox-label'>{Label}</InputLabel>
+        <InputLabel className='font-bold' id='demo-multiple-checkbox-label'>
+          {Label}
+        </InputLabel>
         <Select
           className='text-center'
           labelId='demo-multiple-checkbox-label'
@@ -63,11 +63,10 @@ export default function FilterItem({ Label, names }) {
           open={showSelect}
           onOpen={() => setShowSelect(true)}
           onClose={() => setShowSelect(false)}
-          multiple
           value={personName}
           onChange={handleChange}
           input={<OutlinedInput label={Label} />}
-          renderValue={(selected) => selected.length}
+          renderValue={(selected) => selected}
           MenuProps={MenuProps}
           endAdornment={
             <IconButton
@@ -78,12 +77,10 @@ export default function FilterItem({ Label, names }) {
                 bottom: "2px",
               }}
               onClick={() => {
-                personName.length !== 0
-                  ? setPersonName([])
-                  : setShowSelect(true);
+                personName ? setPersonName("") : setShowSelect(true);
               }}
             >
-              {personName.length === 0 ? (
+              {!personName ? (
                 <ArrowDropDown
                   sx={{
                     fontSize: "1.25rem",
@@ -106,12 +103,7 @@ export default function FilterItem({ Label, names }) {
           {names.map((name) => (
             <MenuItem key={name} value={name}>
               <Checkbox checked={personName.indexOf(name) > -1} />
-              <ListItemText
-                sx={{ fontSize: "2px" }}
-                className='flex items-center'
-                primary={name}
-                secondary={"ui"}
-              />
+              <ListItemText className='flex' primary={name} secondary={""} />
             </MenuItem>
           ))}
           <Close

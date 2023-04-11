@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const Close = ({ clear, close }) => {
+const Close = ({ clear, close, text }) => {
   return (
     <div className='flex justify-between items-center p-3 border-t-[1px] border-slate-800 border-opacity-50'>
       <u className='cursor-pointer hover:text-myBrown' onClick={clear}>
@@ -22,7 +22,7 @@ const Close = ({ clear, close }) => {
         variant='contained'
         color='primary'
       >
-        {"Close"}
+        {!text ? "close" : text}
       </Button>
     </div>
   );

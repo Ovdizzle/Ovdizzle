@@ -6,11 +6,12 @@ import { RiCloseLine } from "react-icons/ri";
 import { AiOutlineBars } from "react-icons/ai";
 import { TiTick } from "react-icons/ti";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { updateAddress } from "../../store/slice-reducers/Web3slice";
 import { useDispatch } from "react-redux";
-import { easeIn, motion, useAnimation } from "framer-motion";
+import { delay, easeIn, motion, useAnimation } from "framer-motion";
 import Select from "react-select";
+import { Swing, Swang } from "../data/Maths";
 
 // import { ethers } from 'ethers';
 import Logo from "./Logo";
@@ -32,6 +33,8 @@ const Navbar = () => {
   const [showmenu, setShowmenu] = useState(false);
   const dispatch = useDispatch();
   const controls = useAnimation();
+
+  // console.log(Swing);
 
   const connectWallet = async () => {
     // console.log('requesting accounts');
@@ -81,19 +84,31 @@ const Navbar = () => {
       title: "$ales",
       url: "/about",
     },
+    {
+      title: "$ales",
+      url: "/about",
+    },
   ];
 
   return (
     <motion.nav
       initial={{ x: 0 }}
       animate={{ x: [200, 0] }}
-      className='navbar fixed top-0'
+      className='navbar sticky top-0  '
     >
       <div className='logo-menu'>
         <motion.div
           initial={{}}
-          animate={{ y: [null, -15, 0] }}
-          transition={{ delay: 1, repeat: 15 }}
+          animate={{
+            y: [0, -15, 0, -15, 0, -17, 0, -12, 0],
+            // x: [0, 0, 0, 0, 0, 15, 0, 0, 0, 0],
+          }}
+          transition={{
+            delay: 0.1,
+            repeat: 7,
+            duration: 4,
+            // x: { delay: 8, duration: 5, repeat: 2 },
+          }}
           className='logos'
         >
           <Link to='/'>
@@ -144,7 +159,14 @@ const Navbar = () => {
             onClick={hideMenu}
             className='flex'
           >
-            <Link to='/SamplePacks'>$ounds</Link>
+            <NavLink
+              to='/sounds'
+              style={({ isActive }) => ({
+                color: isActive && "rgb(100 116 139)",
+              })}
+            >
+              $ounds
+            </NavLink>
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2, y: -5 }}
@@ -152,7 +174,9 @@ const Navbar = () => {
             transition={{ type: "tween", duration: 0.2 }}
             onClick={hideMenu}
           >
-            <Link to='./nfts'>NFTs</Link>
+            <Link to='/join' target={"targetFrame"}>
+              NFTs
+            </Link>
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2, y: -5 }}
@@ -174,10 +198,8 @@ const Navbar = () => {
           </motion.li>
         </motion.ul>
       </menu>
-      <div>{/* <MusicPlayer /> */}</div>
 
       <div className='icon flex items-center'>
-        {/* <button onClick={connectWallet}>{defaultAccount?`${defaultAccount}`:'Connect'}</button> */}
         <li>
           <Link onClick={connectWallet} to=''>
             {defaultAccount ? (

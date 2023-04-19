@@ -83,9 +83,10 @@ export default function FilterKey({ Label, names }) {
           MenuProps={MenuProps}
           endAdornment={
             <IconButton
+              disableRipple
               sx={{
                 position: "relative",
-                right: "5px",
+                right: "7px",
               }}
               onClick={() => {
                 setKey("");

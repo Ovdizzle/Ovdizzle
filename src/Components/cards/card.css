@@ -1,6 +1,52 @@
+@keyframes vibrate {
+  0% {
+    color: #ffffff;
+  }
+  10% {
+    color: #c4bcb1;
+  }
+  20% {
+    color: #b1af9b;
+  }
+  30% {
+    color: #f6fcff;
+  }
+  40% {
+    color: #cdddce;
+  }
+  50% {
+    color: #07350b;
+  }
+  60% {
+    color: #15591a;
+  }
+  70% {
+    color: #257a2c;
+  }
+  80% {
+    color: #469f4e;
+  }
+  90% {
+    color: #ffffff;
+  }
+  100% {
+    color: #fbfffb;
+  }
+}
+#Card .cart p {
+  animation: vibrate 1s ease-in 0.3s;
+  animation-fill-mode: forwards;
+  transition: all 0.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 #Card:hover .cart {
   transform: translateY(0);
-  transition: 0.4s ease-out;
+  transition: 0.2s ease-out;
+  scale: 1;
+  left: 50%;
+  width: 50%;
+  border-radius: 3px;
 }
 
 .clef {

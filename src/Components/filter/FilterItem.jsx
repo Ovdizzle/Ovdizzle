@@ -39,7 +39,7 @@ const MenuProps = {
 
 export default function FilterItem({ Label, names }) {
   const [personName, setPersonName] = React.useState(Array);
-  console.log(personName);
+  // console.log(personName);
 
   const handleChange = (event) => {
     const {
@@ -71,11 +71,12 @@ export default function FilterItem({ Label, names }) {
           MenuProps={MenuProps}
           endAdornment={
             <IconButton
+              disableRipple
               sx={{
                 // display: personName.length === 0 ? "none" : null,
                 position: "relative",
-                right: "5px",
-                bottom: "2px",
+                right: "7px",
+                bottom: "0px",
               }}
               onClick={() => {
                 personName.length !== 0

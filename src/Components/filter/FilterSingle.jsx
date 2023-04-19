@@ -70,11 +70,14 @@ export default function FilterSingle({ Label, names }) {
           MenuProps={MenuProps}
           endAdornment={
             <IconButton
+              disableRipple
               sx={{
                 // display: personName.length === 0 ? "none" : null,
                 position: "relative",
-                right: "5px",
-                bottom: "2px",
+                right: "7px",
+                bottom: "0px",
+                // border: "2px solid black",
+                // backgroundColor: "yellow",
               }}
               onClick={() => {
                 personName ? setPersonName("") : setShowSelect(true);

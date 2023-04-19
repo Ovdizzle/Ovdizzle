@@ -1,7 +1,7 @@
 // import { CircleIcon } from "@radix-ui/react-icons";
 import CircleIcon from "@mui/icons-material/Circle";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -15,6 +15,19 @@ import {
   PlusOne,
 } from "@mui/icons-material";
 import { HeartIcon } from "@radix-ui/react-icons";
+import FilterItem from "../filter/FilterItem";
+import FilterKey from "../filter/FilterKey";
+import FilterSingle from "../filter/FilterSingle";
+import FilterBpm from "../filter/FilterBpm";
+import { useState } from "react";
+import Instrument from "../filter/Instrument";
+import Samples from "../samples/Samples";
+import axios from "axios";
+import { RemoveScrollBar } from "react-remove-scroll-bar";
+import { IconPlayerPlay } from "@tabler/icons-react";
+import Pagination from "../samples/Pagination";
+import Users from "../samples/Sample";
+import { USERS_PER_PAGE } from "../../utils/constants";
 
 export const bp = (size) => {
   return (
@@ -25,16 +38,73 @@ export const bp = (size) => {
   );
 };
 
+const names = [
+  "guitar",
+  "keyboard",
+  "drums",
+  "brass & woodwind",
+  "synth",
+  "percussions",
+  "cymbals & hats",
+  "snare",
+  "tom",
+  "conga",
+];
 const Item = () => {
   const location = useLocation();
   const data = location.state;
-  console.log(data);
+  const [samples, setSamples] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
 
+  const getData = async () => {
+    try {
+      const res = await axios.get("/uploader");
+
+      // const datas = res.data;
+      const datas = res.data[0].Pack;
+
+      // setSamples(datas);
+      setUsers(datas);
+      setTotalPages(Math.ceil(datas.length / USERS_PER_PAGE));
+      setIsLoading(false);
+    } catch (error) {
+      console.log("Error:" + error + "Get data unsuccessful");
+    }
+  };
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    getData();
+    // (async ()=>{
+    //       try {
+    //         const response = await axios.get("/uploader").then((res) => {
+    //           // console.log(res);
+    //           const SamplePacksdata = res.data[0].Pack;
+    //           setSamples(SamplePacksdata);
+    //         });
+    //       } catch (err) {
+    //         if (err.response.staus === 500) {
+    //           console.log("there was a problem with the server");
+    //         } else {
+    //           console.log(err.response.data.msg || "error from post");
+    //         }
+    //       }
+    // })
+    // setTimeout(() => console.log(samples), 6000);
+  }, []);
+  const handleClick = (number) => {
+    setPage(number);
+  };
   return (
-    <div className=''>
+    <div className='h-[1500px]'>
+      {/* <RemoveScrollBar /> */}
       <section className='flex h-[225px] mb-5 '>
         <div
-          className=''
+          className='image_div'
           style={{
             // background: `url(${data.url})`,
             width: "300px",
@@ -53,12 +123,15 @@ const Item = () => {
             <Typography variant='poster'>{data.artiste}</Typography>
             <Typography variant='smallHeading'>{data.title}</Typography>
             <div className='flex space-x-2 text-slate-500'>
-              <Typography className=''>Genre</Typography>{" "}
-              <Typography className=''>{bp(8)}245 Samples</Typography>
+              <Typography className=''>AfroJazz</Typography>
+              <Typography className=''>
+                {bp(8)}
+                {users.length} Samples
+              </Typography>
             </div>
           </div>
           <div className='Buttons  mb-[10px] space-x-8'>
-            <Button
+            {/* <Button
               sx={{
                 ":hover": {
                   bgcolor: "#AF50",
@@ -73,9 +146,14 @@ const Item = () => {
             >
               <Add />
               {"Get Pack"}
-            </Button>
-            <Button variant='outlined' color='primary'>
-              <PlayArrowOutlined />
+            </Button> */}
+            <Button
+              size='small'
+              className='text-[10px]'
+              variant='outlined'
+              color='primary'
+            >
+              <IconPlayerPlay size={15} />
               {"Preview"}
             </Button>
           </div>
@@ -84,7 +162,7 @@ const Item = () => {
           {<HeartIcon className='' />}
         </Typography>
       </section>
-      <p className='flex flex-wrap border-y-[1px] border-opacity-20 p-2 border-slate-900'>
+      <p className='flex  flex-wrap border-y-[1px] border-opacity-20 p-2 border-slate-900'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. In, illo.
         Repellat, adipisci error mollitia, voluptatibus ipsum similique tempore
         harum enim nostrum quae illum quasi facilis quod, at necessitatibus
@@ -93,6 +171,34 @@ const Item = () => {
         nemo! Voluptatum iusto expedita totam quaerat eos fuga, at saepe magni
         iure! Accusamus, maxime.
       </p>
+      <section>
+        <Typography className='p-2'>Samples</Typography>
+        <div className='flex flex-wrap'>
+          <FilterItem Label={"Instruments"} names={names} />
+          <FilterItem Label={"Genre"} names={["AfroJazz"]} />
+          <FilterKey Label={"Key"} />
+          <FilterSingle Label={"Type"} names={["Loops", "One-shots"]} />
+
+          <FilterBpm Label={"BPM"} />
+        </div>
+        {/* <hr /> */}
+        {/* <Samples samples={samples} /> */}
+        <div>
+          <h1>Pagination Demo</h1>
+          {isLoading ? (
+            <div className='loading'>Loading...</div>
+          ) : (
+            <React.Fragment>
+              <Users users={users} page={page} />
+              <Pagination
+                totalPages={totalPages}
+                handleClick={handleClick}
+                page={page}
+              />
+            </React.Fragment>
+          )}
+        </div>
+      </section>
     </div>
   );
 };

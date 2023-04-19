@@ -1,0 +1,126 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@200&display=swap"); */
+
+* {
+  /* color: #9be8a1; */
+  /* font-family: "DynaPuff", cursive; */
+  border: 2px solid black;
+  /* font-weight: 100; */
+}
+.numbers {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.actives {
+  background-color: #7f7373;
+}
+
+.cardArray::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.cardArray {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.bord {
+  border: 1px solid var(--secondary);
+}
+
+.utility::before {
+  content: "";
+  display: inline-flex;
+  /* border: 0.2px solid greenyellow; */
+  /* scale: 3; */
+  width: 5px;
+  height: 5px;
+  color: #293d04;
+  background-color: #293d04;
+  border-radius: 50%;
+  /* font-size: 50px; */
+  /* position: relative; */
+  /* right: 7px; */
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
+:root {
+  --primary: #25092c;
+  --secondary: #9be8a1;
+  --lovelypink: #fe8daa;
+  --binance_black: #0b0e11ff;
+  --binance_ash: #111518ff;
+  --binance_yellow: #fcd535ff;
+  --binance_white: #eaecefff;
+  --binance_green: #14cb85ff;
+  --binance_brightash: #6b7f96ff;
+  --myGreen: #293d04;
+  --myYellow: #e9ec6b;
+  --myBrown: #623412;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  /* background-color: #e9ec6b; */
+  /* background-color: #2c2c22; */
+  line-height: 1.428571429;
+  font-size: 13px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h6 {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  /* color: #a6a8ad; */
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* Songs Section */
+
+#topSection h1 {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+
+  font-weight: 400;
+  /* display: flex; */
+  /* align-items: center; */
+  /* height: 100%; */
+}
+
+@media screen and (max-width: 769px) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .Homeimg {
+    width: 100%;
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    margin-bottom: 200px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
